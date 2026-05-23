@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezerwacja - Sanatorium Zdrowie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">Przejdź do głównej treści</a>
+
+    <header>
+        <h1>Sanatorium "Zdrowie"</h1>
+        <nav aria-label="Nawigacja główna">
+            <ul>
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="zabiegi.html">Nasze Zabiegi</a></li>
+                <li><a href="rezerwacja.html" aria-current="page">Rezerwacja Pobytu</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <h2>Formularz rezerwacji pobytu</h2>
+        <p>Wypełnij poniższy formularz, aby zarezerwować miejsce w naszym sanatorium. Pola oznaczone gwiazdką (*) są wymagane.</p>
+
+        <form action="#" method="POST">
+            <div>
+                <label for="imie">Imię i nazwisko *</label>
+                <input type="text" id="imie" name="imie" required aria-required="true">
+            </div>
+
+            <div>
+                <label for="email">Adres e-mail *</label>
+                <input type="email" id="email" name="email" required aria-required="true">
+            </div>
+
+            <div>
+                <label for="termin">Wybierz miesiąc pobytu</label>
+                <select id="termin" name="termin">
+                    <option value="lipiec">Lipiec 2026</option>
+                    <option value="sierpien">Sierpień 2026</option>
+                    <option value="wrzesien">Wrzesień 2026</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="uwagi">Dodatkowe potrzeby (np. dieta, pokój dla osób na wózku)</label>
+                <textarea id="uwagi" name="uwagi" rows="4"></textarea>
+            </div>
+
+            <button type="submit">Wyślij zgłoszenie</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sanatorium Zdrowie. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+
+</body>
+</html>
